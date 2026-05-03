@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/sh
 
-URL="https://example.com/file.js"
+URL="https://raw.githubusercontent.com/Horizon-Developments/hyperionX/main/server.js"
 
 if ! command -v node >/dev/null 2>&1; then
   pkg update -y
