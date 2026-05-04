@@ -132,9 +132,7 @@ do
     local ok, obj = pcall(function()
       return loadstring(readfile(path))()({
         commands = commands,
-        connect = newcclosure(function()
-          connect()
-        end),
+        connect = connect,
         dir = dir,
         selfchat = selfchat,
         request = request,

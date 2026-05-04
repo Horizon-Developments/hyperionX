@@ -114,16 +114,16 @@ wss.on("connection", (ws) => {
 		domain
 	});
 	const toHex = (str) => Buffer.from(str).toString("hex");
-	console.log("HyperionX Active");
-	console.log("\nOwner token:\n");
+	console.log("HyperionX is running.");
+	console.log("Owner token:\n");
 	console.log(toHex(JSON.stringify({
-		url: ownerUrl,
+		url: domain,
 		type: "RhWuvwF3FZ",
 		password: owner_password
 	})));
 	console.log("\nClient token:\n");
 	console.log(toHex(JSON.stringify({
-		url: clientUrl,
+		url: domain,
 		type: "client",
 		password: client_password
 	})));
